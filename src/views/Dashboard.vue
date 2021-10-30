@@ -46,12 +46,12 @@
           class="flex items-center justify-between mb-6"
         >
           <div class="flex items-center">
-            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-3.5">
               <img :src="history.image" class="w-full h-full" alt="" />
             </div>
             <div>
               <h1 class="font-bold">{{ history.name }}</h1>
-              <p class="text-primary-gray">{{ history.date }}</p>
+              <p class="text-sm text-primary-gray">{{ history.date }}</p>
             </div>
           </div>
           <h1 class="font-bold"># {{ history.price }}</h1>
