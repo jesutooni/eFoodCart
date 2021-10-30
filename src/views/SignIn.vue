@@ -1,7 +1,7 @@
 <template>
   <div class="p-8 font-PT-Sans">
-    <h1 class="text-3xl text-primary-black font-bold capitalize">Sign up</h1>
-    <form class="mt-20">
+    <h1 class="text-3xl text-primary-black font-bold capitalize">Sign in</h1>
+    <form @submit.prevent="signIn" class="mt-20">
       <div class="mb-8">
         <input
           type="email"
@@ -38,6 +38,7 @@
         Forgot Password?</router-link
       >
       <button
+        type="submit"
         class="
           w-full
           h-16
@@ -50,23 +51,23 @@
           focus:outline-none
         "
       >
-        Sign Up
-      </button>
-      <button
-        class="
-          w-full
-          h-16
-          text-center text-primary-black
-          font-bold
-          border-2 border-primary-black
-          mb-6
-          rounded-full
-          focus:outline-none
-        "
-      >
-        Sign in with Google
+        Sign In
       </button>
     </form>
+    <button
+      class="
+        w-full
+        h-16
+        text-center text-primary-black
+        font-bold
+        border-2 border-primary-black
+        mb-6
+        rounded-full
+        focus:outline-none
+      "
+    >
+      Sign in with Google
+    </button>
     <p class="text-primary-gray text-center">
       Don't have an account?
       <router-link to="/signup" class="text-primary-black font-bold"
@@ -83,6 +84,11 @@ export default {
       email: "",
       password: "",
     };
+  },
+  methods: {
+    signIn() {
+      this.$router.push("/dashboard");
+    },
   },
 };
 </script>

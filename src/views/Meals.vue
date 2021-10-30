@@ -16,16 +16,21 @@
         <input
           type="text"
           class="ml-4 w-full h-16 rounded-full focus:outline-none"
+          v-model="search"
           placeholder="Search"
         />
       </div>
 
-      <div>
-        <div class="relative h-40 w-36 rounded-xl overflow-hidden">
-          <img src="../assets/jollof.png" alt="" />
+      <div class="mt-8 flex flex-wrap gap-5">
+        <div
+          v-for="meal in meals"
+          :key="meal.name"
+          class="relative h-40 w-36 rounded-xl overflow-hidden"
+        >
+          <img :src="meal.image" alt="" />
           <div class="absolute bottom-0 p-4 text-white font-bold">
-            <h2>Jollof Rice</h2>
-            <h2># 20,000</h2>
+            <h2>{{ meal.name }}</h2>
+            <h2># {{ meal.price }}</h2>
           </div>
         </div>
       </div>
@@ -41,36 +46,37 @@ export default {
   },
   data() {
     return {
+      search: "",
       meals: [
         {
           image: require("../assets/jollof.png"),
           name: "Jollof Rice",
-          cost: "20,000",
+          price: "20,000",
         },
         {
           image: require("../assets/kebab.png"),
           name: "Kebab",
-          cost: "10,000",
+          price: "10,000",
         },
         {
           image: require("../assets/chicken-wings.png"),
           name: "Chicken Wings",
-          cost: "5,000",
+          price: "5,000",
         },
         {
           image: require("../assets/noodles.png"),
           name: "Noodles",
-          cost: "15,000",
+          price: "15,000",
         },
         {
           image: require("../assets/fries.png"),
           name: "Fries",
-          cost: "15,000",
+          price: "6,000",
         },
         {
           image: require("../assets/burger.png"),
           name: "Burger",
-          cost: "15,000",
+          price: "8,000",
         },
       ],
     };

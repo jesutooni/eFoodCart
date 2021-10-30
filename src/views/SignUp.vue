@@ -1,7 +1,7 @@
 <template>
   <div class="p-8 font-PT-Sans">
     <h1 class="text-3xl text-primary-black font-bold capitalize">Sign up</h1>
-    <form class="mt-20">
+    <form @submit.prevent="" class="mt-20">
       <div class="mb-8">
         <input
           type="text"
@@ -53,6 +53,7 @@
         />
       </div>
       <button
+        type="submit"
         class="
           w-full
           h-16
@@ -66,21 +67,21 @@
       >
         Sign Up
       </button>
-      <button
-        class="
-          w-full
-          h-16
-          text-center text-primary-black
-          font-bold
-          border-2 border-primary-black
-          mb-6
-          rounded-full
-          focus:outline-none
-        "
-      >
-        Sign in with Google
-      </button>
     </form>
+    <button
+      class="
+        w-full
+        h-16
+        text-center text-primary-black
+        font-bold
+        border-2 border-primary-black
+        mb-6
+        rounded-full
+        focus:outline-none
+      "
+    >
+      Sign in with Google
+    </button>
     <p class="text-primary-gray text-center">
       Have an account?
       <router-link to="/signin" class="text-primary-black font-bold"

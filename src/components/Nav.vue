@@ -8,15 +8,11 @@
           data-width="38"
         ></span>
       </div>
-      <div>
-        <span
-          class="iconify"
-          data-icon="carbon:user-avatar-filled-alt"
-          data-width="38"
-        ></span>
+      <div class="h-9 w-9">
+        <img src="../assets/cart.png" alt="" />
       </div>
     </nav>
-    <div v-if="nav" class="fixed inset-0 p-8 bg-white">
+    <div v-if="nav" class="fixed inset-0 p-8 bg-white z-30">
       <div @click="toggleNav">
         <span
           class="iconify ml-auto"
@@ -27,9 +23,12 @@
       <div class="h-4/5 flex justify-center items-center">
         <div class="text-center text-primary-gray">
           <ul>
-            <li>Home</li>
-            <li class="my-8">Meals</li>
-            <li>Settings</li>
+            <router-link to="/dashboard"
+              ><li class="mb-8">Home</li></router-link
+            >
+            <router-link to="/meals"><li class="mb-8">Meals</li></router-link>
+            <router-link to="/"><li class="mb-8">Profile</li></router-link>
+            <router-link to="/"><li class="mb-8">Settings</li></router-link>
           </ul>
         </div>
       </div>

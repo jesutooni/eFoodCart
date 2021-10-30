@@ -1,20 +1,37 @@
 <template>
-  <div class="p-8 h-screen">
-    <button
-      class="
-        w-full
-        h-16
-        text-center text-white
-        font-bold
-        bg-primary-green
-        mt-6
-        mb-8
-        rounded-full
-        focus:outline-none
-      "
+  <div class="p-8 pt-32 h-screen">
+    <div class="h-1/2 flex items-center justify-center">
+      <div
+        class="
+          w-28
+          h-28
+          rounded-full
+          bg-primary-green
+          flex
+          justify-center
+          items-center
+        "
+      >
+        <img src="../assets/buy.png" alt="" />
+      </div>
+    </div>
+    <router-link to="/signin"
+      ><button
+        class="
+          w-full
+          h-16
+          text-center text-white
+          font-bold
+          bg-primary-green
+          mt-6
+          mb-8
+          rounded-full
+          focus:outline-none
+        "
+      >
+        Sign in with Email
+      </button></router-link
     >
-      <router-link to="/signin"> Sign in with Email</router-link>
-    </button>
     <button
       class="
         w-full
