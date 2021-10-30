@@ -37,14 +37,14 @@
         </option>
       </select> -->
 
-      <div class="mt-8 flex flex-wrap gap-5">
+      <div class="mt-8 flex flex-wrap gap-6 sm:gap-9">
         <div
           v-for="meal in meals"
           :key="meal.name"
-          class="relative rounded-xl overflow-hidden flex-grow"
+          class="relative w-5/12 rounded-xl overflow-hidden flex-grow"
         >
           <img :src="meal.image" class="w-full h-full" alt="" />
-          <div class="absolute bottom-0 p-4 text-white font-bold">
+          <div class="absolute bottom-0 p-p8 pr-0 text-white font-bold">
             <h2>{{ meal.name }}</h2>
             <h2># {{ meal.price }}</h2>
           </div>

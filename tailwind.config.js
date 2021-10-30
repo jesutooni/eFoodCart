@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         "product-sans": ["'product sans'"],
       },
+      padding: {
+        p8: "8%",
+      },
     },
   },
   variants: {
