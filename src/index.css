@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
+@font-face {
+  font-family: "product sans";
+  src: url("./assets/product-sans/Product\ Sans\ Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "product sans";
+  src: url("./assets/product-sans/Product\ Sans\ Bold.ttf");
+  font-weight: 700;
+}
 
 @tailwind base;
 @tailwind components;

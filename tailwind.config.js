@@ -11,7 +11,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        "PT-Sans": ["'PT Sans Caption'", "sans-serif"],
+        "product-sans": ["'product sans'"],
       },
     },
   },

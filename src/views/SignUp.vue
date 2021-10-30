@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 font-PT-Sans">
+  <div class="p-8 font-product-sans">
     <h1 class="text-3xl text-primary-black font-bold capitalize">Sign up</h1>
     <form @submit.prevent="" class="mt-20">
       <div class="mb-8">

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="font-product-sans">
     <nav class="flex justify-between">
       <div @click="toggleNav">
         <span

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8">
+  <div class="p-8 font-product-sans">
     <top-nav />
   </div>
 </template>

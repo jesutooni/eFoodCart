@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 pt-32 h-screen">
+  <div class="p-8 pt-32 h-screen font-product-sans">
     <div class="h-1/2 flex items-center justify-center">
       <div
         class="
