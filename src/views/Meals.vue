@@ -5,7 +5,14 @@
       <h1 class="my-8 text-2xl font-bold">Meals</h1>
 
       <div
-        class="px-6 flex items-center border-2 border-primary-gray rounded-full"
+        class="
+          mb-8
+          px-6
+          flex
+          items-center
+          border-2 border-primary-gray
+          rounded-full
+        "
       >
         <span
           class="iconify"
@@ -21,13 +28,22 @@
         />
       </div>
 
+      <!-- <select
+        v-model="category"
+        class="w-16 bg-primary-green text-white px-4 py-1 rounded-full"
+      >
+        <option v-for="category in categories" :key="category">
+          {{ category }}
+        </option>
+      </select> -->
+
       <div class="mt-8 flex flex-wrap gap-5">
         <div
           v-for="meal in meals"
           :key="meal.name"
-          class="relative h-40 w-36 rounded-xl overflow-hidden"
+          class="relative rounded-xl overflow-hidden flex-grow"
         >
-          <img :src="meal.image" alt="" />
+          <img :src="meal.image" class="w-full h-full" alt="" />
           <div class="absolute bottom-0 p-4 text-white font-bold">
             <h2>{{ meal.name }}</h2>
             <h2># {{ meal.price }}</h2>
@@ -79,6 +95,7 @@ export default {
           price: "8,000",
         },
       ],
+      categories: ["All"],
     };
   },
 };

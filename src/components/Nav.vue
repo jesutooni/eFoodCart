@@ -13,12 +13,8 @@
       </div>
     </nav>
     <div v-if="nav" class="fixed inset-0 p-8 bg-white z-30">
-      <div @click="toggleNav">
-        <span
-          class="iconify ml-auto"
-          data-icon="ci:close-big"
-          data-width="32"
-        ></span>
+      <div @click="toggleNav" class="border-2 w-8 ml-auto">
+        <span class="iconify" data-icon="ci:close-big" data-width="32"></span>
       </div>
       <div class="h-4/5 flex justify-center items-center">
         <div class="text-center text-primary-gray">
