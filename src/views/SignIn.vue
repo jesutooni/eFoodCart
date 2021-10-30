@@ -42,6 +42,7 @@
           w-full
           h-16
           text-center text-white
+          font-bold
           bg-primary-green
           mt-6
           mb-8
@@ -67,7 +68,7 @@
       </button>
     </form>
     <p class="text-primary-gray text-center">
-      Have an account?
+      Don't have an account?
       <router-link to="/signup" class="text-primary-black font-bold"
         >Sign Up</router-link
       >

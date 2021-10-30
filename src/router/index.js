@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import SignUp from "../views/SignUp.vue";
 import SignIn from "../views/SignIn.vue";
+import Dashboard from "../views/Dashboard.vue";
+import Meals from "../views/Meals.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +32,16 @@ const routes = [
     path: "/signin",
     name: "SignIn",
     component: SignIn,
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard,
+  },
+  {
+    path: "/meals",
+    name: "Meals",
+    component: Meals,
   },
 ];
 

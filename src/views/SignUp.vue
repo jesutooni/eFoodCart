@@ -57,6 +57,7 @@
           w-full
           h-16
           text-center text-white
+          font-bold
           bg-primary-green
           mb-8
           rounded-full
