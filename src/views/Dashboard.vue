@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 font-product-sans">
+  <div class="p-p8 font-product-sans">
     <top-nav />
     <h1 class="font-bold my-8 text-2xl">Hey, {{ user }}</h1>
     <div class="p-8 bg-primary-green rounded-xl">

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 font-product-sans">
+  <div class="p-p8 font-product-sans">
     <h1 class="text-3xl text-primary-black font-bold capitalize">Sign in</h1>
     <form @submit.prevent="signIn" class="mt-20">
       <div class="mb-8">

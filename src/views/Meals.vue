@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 font-product-sans">
+  <div class="p-p8 font-product-sans">
     <top-nav />
     <div class="">
       <h1 class="my-8 text-2xl font-bold">Meals</h1>
