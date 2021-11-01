@@ -9,16 +9,21 @@
       </p>
     </div>
 
-    <div class="w-full">
-      <span
-        class="iconify w-full h-auto border-primary-black border"
-        data-icon="ic:twotone-qr-code-2"
-      ></span>
+    <div class="w-full mt-20">
+      <img src="../assets/qrCode.svg" alt="" />
     </div>
 
     <button
       @click="goHome"
-      class="bg-primary-green w-full font-bold text-white rounded-full py-5"
+      class="
+        bg-primary-green
+        w-full
+        font-bold
+        text-white
+        rounded-full
+        py-5
+        mt-36
+      "
     >
       Back Home
     </button>
