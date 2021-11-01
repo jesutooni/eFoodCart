@@ -2,29 +2,8 @@
   <div class="p-p8 font-product-sans">
     <top-nav />
     <h1 class="font-bold my-8 text-2xl">Hey, {{ user }}</h1>
-    <div class="p-8 bg-primary-green rounded-xl">
-      <div
-        class="
-          flex
-          justify-between
-          items-center
-          text-sm text-secondary-lightWhite
-          mb-10
-        "
-      >
-        <h1>Balance</h1>
-        <div class="flex items-center">
-          <h1>Fund Wallet</h1>
-          <span
-            class="iconify ml-1.5"
-            data-icon="clarity:caret-line"
-            style="color: rgba(253, 254, 253, 0.8)"
-            data-rotate="90deg"
-          ></span>
-        </div>
-      </div>
-      <h1 class="text-secondary-white font-bold"># {{ balance }}</h1>
-    </div>
+
+    <wallet />
 
     <div class="mt-16">
       <div class="flex justify-between items-center">
@@ -42,7 +21,7 @@
       <div class="my-8">
         <div
           v-for="history in histories"
-          :key="history.name"
+          :key="history.id"
           class="flex items-center justify-between mb-6"
         >
           <div class="flex items-center">
@@ -63,34 +42,39 @@
 
 <script>
 import Nav from "../components/Nav.vue";
+import wallet from "../components/Wallet.vue";
 export default {
   components: {
     "top-nav": Nav,
+    wallet,
   },
   data() {
     return {
       user: "David",
-      balance: "200,000",
       histories: [
         {
+          id: 1,
           image: require("../assets/jollof.png"),
           name: "Jollof Rice",
           date: "10/26/21, 5:30 pm",
           price: "20,000",
         },
         {
+          id: 2,
           image: require("../assets/kebab.png"),
           name: "Kebab",
           date: "10/28/21, 2:40 pm",
           price: "10,000",
         },
         {
+          id: 3,
           image: require("../assets/jollof.png"),
           name: "Jollof Rice",
           date: "10/26/21, 5:30 pm",
           price: "20,000",
         },
         {
+          id: 4,
           image: require("../assets/kebab.png"),
           name: "Kebab",
           date: "10/28/21, 2:40 pm",

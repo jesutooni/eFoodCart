@@ -40,14 +40,16 @@
       <div class="mt-8 flex flex-wrap gap-6 sm:gap-9">
         <div
           v-for="meal in meals"
-          :key="meal.name"
+          :key="meal.id"
           class="relative w-5/12 rounded-xl overflow-hidden flex-grow"
         >
-          <img :src="meal.image" class="w-full h-full" alt="" />
-          <div class="absolute bottom-0 p-p8 pr-0 text-white font-bold">
-            <h2>{{ meal.name }}</h2>
-            <h2># {{ meal.price }}</h2>
-          </div>
+          <router-link :to="'/meals/' + meal.id">
+            <img :src="meal.image" class="w-full h-full" alt="" />
+            <div class="absolute bottom-0 p-p8 pr-0 text-white font-bold">
+              <h2>{{ meal.name }}</h2>
+              <h2># {{ meal.price }}</h2>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -63,40 +65,13 @@ export default {
   data() {
     return {
       search: "",
-      meals: [
-        {
-          image: require("../assets/jollof.png"),
-          name: "Jollof Rice",
-          price: "20,000",
-        },
-        {
-          image: require("../assets/kebab.png"),
-          name: "Kebab",
-          price: "10,000",
-        },
-        {
-          image: require("../assets/chicken-wings.png"),
-          name: "Chicken Wings",
-          price: "5,000",
-        },
-        {
-          image: require("../assets/noodles.png"),
-          name: "Noodles",
-          price: "15,000",
-        },
-        {
-          image: require("../assets/fries.png"),
-          name: "Fries",
-          price: "6,000",
-        },
-        {
-          image: require("../assets/burger.png"),
-          name: "Burger",
-          price: "8,000",
-        },
-      ],
       categories: ["All"],
     };
+  },
+  computed: {
+    meals() {
+      return this.$store.state.meals;
+    },
   },
 };
 </script>

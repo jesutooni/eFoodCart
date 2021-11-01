@@ -5,6 +5,8 @@ import SignUp from "../views/SignUp.vue";
 import SignIn from "../views/SignIn.vue";
 import Dashboard from "../views/Dashboard.vue";
 import Meals from "../views/Meals.vue";
+import Meal from "../views/Meal.vue";
+import Payment from "../views/Payment.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +35,16 @@ const routes = [
     path: "/meals",
     name: "Meals",
     component: Meals,
+  },
+  {
+    path: "/meals/:id",
+    name: "Meal",
+    component: Meal,
+  },
+  {
+    path: "/meals/:id/payment",
+    name: "Payment",
+    component: Payment,
   },
 ];
 
