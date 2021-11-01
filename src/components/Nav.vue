@@ -25,7 +25,9 @@
             <router-link to="/meals"
               ><li class="mb-4 py-4">Meals</li></router-link
             >
-            <router-link to="/"><li class="mb-4 py-4">Profile</li></router-link>
+            <router-link to="/profile"
+              ><li class="mb-4 py-4">Profile</li></router-link
+            >
             <router-link to="/"
               ><li class="mb-4 py-4">Settings</li></router-link
             >

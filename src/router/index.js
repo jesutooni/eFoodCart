@@ -4,9 +4,11 @@ import Home from "../views/Home.vue";
 import SignUp from "../views/SignUp.vue";
 import SignIn from "../views/SignIn.vue";
 import Dashboard from "../views/Dashboard.vue";
+import Profile from "../views/Profile.vue";
 import Meals from "../views/Meals.vue";
 import Meal from "../views/Meal.vue";
 import Payment from "../views/Payment.vue";
+import QR from "../views/QR.vue";
 import PaymentSuccessfull from "../views/PaymentSuccess.vue";
 
 Vue.use(VueRouter);
@@ -33,6 +35,11 @@ const routes = [
     component: Dashboard,
   },
   {
+    path: "/profile",
+    name: "Profile",
+    component: Profile,
+  },
+  {
     path: "/meals",
     name: "Meals",
     component: Meals,
@@ -51,6 +58,11 @@ const routes = [
     path: "/success",
     name: "Success",
     component: PaymentSuccessfull,
+  },
+  {
+    path: "/qr",
+    name: "QR",
+    component: QR,
   },
 ];
 

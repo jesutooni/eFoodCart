@@ -7,10 +7,10 @@
       </div>
       <h1 class="text-2xl font-bold mt-8">Order Success</h1>
     </div>
-    <div class="mt-8 flex justify-between items-center gap-4">
+    <div class="mt-8 flex justify-between items-center">
       <button
+        @click="orderQR"
         class="
-          py-4
           px-6
           w-full
           h-16
@@ -25,9 +25,9 @@
       <button
         @click="goHome"
         class="
-          py-4
           px-6
           w-full
+          h-16
           border-2 border-primary-black
           text-primary-black
           font-bold
@@ -49,6 +49,9 @@ export default {
   methods: {
     goHome() {
       this.$router.push("/dashboard");
+    },
+    orderQR() {
+      this.$router.push("/qr");
     },
   },
 };

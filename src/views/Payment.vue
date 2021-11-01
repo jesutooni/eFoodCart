@@ -8,6 +8,19 @@
       <h1 class="my-8 text-2xl font-bold">Payment</h1>
 
       <wallet />
+
+      <div class="flex items-center justify-between mt-8">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-3.5">
+            <img src="../assets/jollof.png" class="w-full h-full" alt="" />
+          </div>
+          <div>
+            <h1 class="font-bold">Jollof Rice</h1>
+            <p class="text-sm text-primary-gray">Quantity - 1</p>
+          </div>
+        </div>
+        <h1 class="font-bold"># 20,000</h1>
+      </div>
     </div>
 
     <div>
@@ -28,7 +41,15 @@
 
       <button
         @click="confirmOrder"
-        class="w-full mt-8 bg-primary-green text-white rounded-full py-5"
+        class="
+          w-full
+          mt-8
+          bg-primary-green
+          font-bold
+          text-white
+          rounded-full
+          py-5
+        "
       >
         Confirm
       </button>

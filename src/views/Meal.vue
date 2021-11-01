@@ -32,17 +32,26 @@
         </p>
 
         <p class="font-bold mt-4 text-3xl"># {{ selectedMeal.price }}</p>
-        <div class="mt-8 flex justify-between items-center">
+        <div class="mt-8 flex justify-between items-center gap-4">
           <button
             @click="payMeal"
-            class="py-4 px-6 bg-primary-green text-white font-bold rounded-full"
+            class="
+              w-full
+              px-6
+              h-16
+              bg-primary-green
+              text-white
+              font-bold
+              rounded-full
+            "
           >
             Place Order
           </button>
           <button
             class="
-              py-4
               px-6
+              h-16
+              w-full
               border-2 border-primary-black
               text-primary-black
               font-bold
