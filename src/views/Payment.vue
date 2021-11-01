@@ -3,7 +3,7 @@
     class="p-p8 min-h-screen font-product-sans flex flex-col justify-between"
   >
     <div>
-      <top-nav />
+      <back />
 
       <h1 class="my-8 text-2xl font-bold">Payment</h1>
 
@@ -58,11 +58,11 @@
 </template>
 
 <script>
-import Nav from "../components/Nav.vue";
+import back from "../components/Back.vue";
 import wallet from "../components/Wallet.vue";
 export default {
   components: {
-    "top-nav": Nav,
+    back,
     wallet,
   },
   methods: {

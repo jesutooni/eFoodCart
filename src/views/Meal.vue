@@ -1,6 +1,6 @@
 <template>
   <div class="p-p8">
-    <top-nav />
+    <back />
     <div class="mt-8 font-product-sans">
       <div>
         <img :src="selectedMeal.image" class="w-full h-full" alt="" />
@@ -67,10 +67,10 @@
 </template>
 
 <script>
-import Nav from "../components/Nav.vue";
+import back from "../components/Back.vue";
 export default {
   components: {
-    "top-nav": Nav,
+    back,
   },
   data() {
     return {
