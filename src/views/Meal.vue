@@ -3,11 +3,11 @@
     <top-nav />
     <div class="mt-8 font-product-sans">
       <div>
-        <img src="../assets/jollof.png" class="w-full h-full" alt="" />
+        <img :src="selectedMeal.image" class="w-full h-full" alt="" />
       </div>
       <div class="mt-8">
         <div class="flex justify-between items-center">
-          <h1 class="font-bold text-2xl">Jollof Rice</h1>
+          <h1 class="font-bold text-2xl">{{ selectedMeal.name }}</h1>
           <div
             class="
               w-24
@@ -28,12 +28,10 @@
           </div>
         </div>
         <p class="text-primary-gray mt-5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis esse
-          nulla reiciendis veniam odio a consequatur itaque, maxime impedit
-          reprehenderit!
+          {{ selectedMeal.description }}
         </p>
 
-        <p class="font-bold mt-4 text-3xl"># 20,000</p>
+        <p class="font-bold mt-4 text-3xl"># {{ selectedMeal.price }}</p>
         <div class="mt-8 flex justify-between items-center">
           <button
             class="py-4 px-6 bg-primary-green text-white font-bold rounded-full"
@@ -68,6 +66,11 @@ export default {
     return {
       count: 1,
     };
+  },
+  computed: {
+    selectedMeal() {
+      return this.$store.state.selectedMeal;
+    },
   },
 };
 </script>

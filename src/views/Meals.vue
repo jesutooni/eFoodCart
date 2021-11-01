@@ -39,7 +39,8 @@
 
       <div class="mt-8 flex flex-wrap gap-6 sm:gap-9">
         <div
-          v-for="meal in meals"
+          @click="selectMeal(index)"
+          v-for="(meal, index) in meals"
           :key="meal.id"
           class="relative w-5/12 rounded-xl overflow-hidden flex-grow"
         >
@@ -71,6 +72,11 @@ export default {
   computed: {
     meals() {
       return this.$store.state.meals;
+    },
+  },
+  methods: {
+    selectMeal(index) {
+      this.$store.commit("selectMeal", index);
     },
   },
 };
