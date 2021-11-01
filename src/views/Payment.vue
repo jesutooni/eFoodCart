@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 min-h-screen font-product-sans">
+  <div class="p-8 min-h-screen font-product-sans flex flex-col justify-between">
     <div>
       <top-nav />
 
@@ -10,13 +10,21 @@
 
     <div>
       <div
-        class="border-t border-b flex justify-between items-center font-bold"
+        class="
+          py-4
+          border-t-2 border-b-2 border-dashed
+          flex
+          justify-between
+          items-center
+          font-bold
+          text-xl
+        "
       >
         <h1>Total</h1>
         <h1># 20,000</h1>
       </div>
 
-      <button class="w-full bg-primary-green text-white rounded-full py-5">
+      <button class="w-full mt-8 bg-primary-green text-white rounded-full py-5">
         Confirm
       </button>
     </div>

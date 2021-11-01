@@ -34,6 +34,7 @@
         <p class="font-bold mt-4 text-3xl"># {{ selectedMeal.price }}</p>
         <div class="mt-8 flex justify-between items-center">
           <button
+            @click="payMeal"
             class="py-4 px-6 bg-primary-green text-white font-bold rounded-full"
           >
             Place Order
@@ -70,6 +71,11 @@ export default {
   computed: {
     selectedMeal() {
       return this.$store.state.selectedMeal;
+    },
+  },
+  methods: {
+    payMeal() {
+      this.$router.push("/meals/" + this.selectedMeal.id + "/payment");
     },
   },
 };
