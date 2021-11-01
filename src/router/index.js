@@ -7,6 +7,7 @@ import Dashboard from "../views/Dashboard.vue";
 import Meals from "../views/Meals.vue";
 import Meal from "../views/Meal.vue";
 import Payment from "../views/Payment.vue";
+import PaymentSuccessfull from "../views/PaymentSuccess.vue";
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: "/meals/:id/payment",
     name: "Payment",
     component: Payment,
+  },
+  {
+    path: "/success",
+    name: "Success",
+    component: PaymentSuccessfull,
   },
 ];
 

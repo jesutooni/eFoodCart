@@ -1,5 +1,7 @@
 <template>
-  <div class="p-8 min-h-screen font-product-sans flex flex-col justify-between">
+  <div
+    class="p-p8 min-h-screen font-product-sans flex flex-col justify-between"
+  >
     <div>
       <top-nav />
 
@@ -24,7 +26,10 @@
         <h1># 20,000</h1>
       </div>
 
-      <button class="w-full mt-8 bg-primary-green text-white rounded-full py-5">
+      <button
+        @click="confirmOrder"
+        class="w-full mt-8 bg-primary-green text-white rounded-full py-5"
+      >
         Confirm
       </button>
     </div>
@@ -38,6 +43,11 @@ export default {
   components: {
     "top-nav": Nav,
     wallet,
+  },
+  methods: {
+    confirmOrder() {
+      this.$router.push("/success");
+    },
   },
 };
 </script>
