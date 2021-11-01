@@ -7,7 +7,7 @@
       </div>
       <h1 class="text-2xl font-bold mt-8">Order Success</h1>
     </div>
-    <div class="mt-8 flex justify-between items-center">
+    <div class="mt-8 flex justify-between items-center gap-4">
       <button
         @click="orderQR"
         class="
