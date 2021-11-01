@@ -16,15 +16,19 @@
       <div @click="toggleNav" class="w-8 ml-auto">
         <span class="iconify" data-icon="ci:close-big" data-width="32"></span>
       </div>
-      <div class="h-4/5 flex justify-center items-center">
-        <div class="text-center text-primary-gray">
+      <div class="h-4/5 flex items-center">
+        <div class="w-full text-center text-primary-gray">
           <ul>
             <router-link to="/dashboard"
-              ><li class="mb-8">Home</li></router-link
+              ><li class="mb-4 py-4">Home</li></router-link
             >
-            <router-link to="/meals"><li class="mb-8">Meals</li></router-link>
-            <router-link to="/"><li class="mb-8">Profile</li></router-link>
-            <router-link to="/"><li class="mb-8">Settings</li></router-link>
+            <router-link to="/meals"
+              ><li class="mb-4 py-4">Meals</li></router-link
+            >
+            <router-link to="/"><li class="mb-4 py-4">Profile</li></router-link>
+            <router-link to="/"
+              ><li class="mb-4 py-4">Settings</li></router-link
+            >
           </ul>
         </div>
       </div>
