@@ -1,6 +1,8 @@
 <template>
-  <div class="p-p8 pt-32 h-screen font-product-sans">
-    <div class="w-20 h-20 rounded-full bg-black">
+  <div
+    class="p-p8 pt-32 h-screen font-product-sans flex flex-col justify-between"
+  >
+    <div class="w-16 h-16 rounded-full bg-black">
       <img class="w-full h-full" src="../assets/logo.png" alt="" />
     </div>
     <router-link to="/signup"
