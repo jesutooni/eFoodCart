@@ -34,7 +34,7 @@
               <p class="text-sm text-primary-gray">{{ history.date }}</p>
             </div>
           </div>
-          <h1 class="font-bold"># {{ history.price }}</h1>
+          <h1 class="font-bold">₦ {{ history.price }}</h1>
         </div>
       </div>
     </div>

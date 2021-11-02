@@ -19,7 +19,7 @@
             <p class="text-sm text-primary-gray">Quantity - 1</p>
           </div>
         </div>
-        <h1 class="font-bold"># 20,000</h1>
+        <h1 class="font-bold">₦ 20,000</h1>
       </div>
     </div>
 

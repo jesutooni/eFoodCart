@@ -21,7 +21,7 @@
           ></span>
         </div>
       </div>
-      <h1 class="text-secondary-white text-2xl font-bold"># {{ balance }}</h1>
+      <h1 class="text-secondary-white text-2xl font-bold">₦ {{ balance }}</h1>
     </div>
 
     <div

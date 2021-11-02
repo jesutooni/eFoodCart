@@ -48,7 +48,7 @@
             <img :src="meal.image" class="w-full h-full" alt="" />
             <div class="absolute bottom-0 p-p8 pr-0 text-white font-bold">
               <h2>{{ meal.name }}</h2>
-              <h2># {{ meal.price }}</h2>
+              <h2>₦ {{ meal.price }}</h2>
             </div>
           </router-link>
         </div>

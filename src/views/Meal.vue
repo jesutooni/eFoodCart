@@ -31,7 +31,7 @@
           {{ selectedMeal.description }}
         </p>
 
-        <p class="font-bold mt-4 text-3xl"># {{ selectedMeal.price }}</p>
+        <p class="font-bold mt-4 text-3xl">₦ {{ selectedMeal.price }}</p>
         <div class="mt-8 flex justify-between items-center gap-4">
           <button
             @click="payMeal"
