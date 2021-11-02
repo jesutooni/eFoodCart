@@ -28,14 +28,28 @@
         />
       </div>
 
-      <!-- <select
-        v-model="category"
-        class="w-16 bg-primary-green text-white px-4 py-1 rounded-full"
+      <div
+        class="
+          bg-primary-green
+          text-white
+          rounded-full
+          flex
+          items-center
+          justify-center
+          px-4
+          py-2
+          w-20
+        "
       >
-        <option v-for="category in categories" :key="category">
-          {{ category }}
-        </option>
-      </select> -->
+        <p class="mr-1.5">All</p>
+        <span
+          class="iconify"
+          data-icon="clarity:caret-line"
+          style="color: white"
+          data-width="23"
+          data-rotate="180deg"
+        ></span>
+      </div>
 
       <div class="mt-8 flex flex-wrap gap-6 sm:gap-9">
         <div
