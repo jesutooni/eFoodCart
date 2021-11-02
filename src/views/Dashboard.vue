@@ -22,6 +22,7 @@
         <div
           v-for="history in histories"
           :key="history.id"
+          @click="showPreviousOrder"
           class="flex items-center justify-between mb-6"
         >
           <div class="flex items-center">
@@ -82,6 +83,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    showPreviousOrder() {
+      this.$router.push("/previousorder");
+    },
   },
 };
 </script>

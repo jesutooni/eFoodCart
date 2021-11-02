@@ -4,11 +4,13 @@ import Home from "../views/Home.vue";
 import SignUp from "../views/SignUp.vue";
 import SignIn from "../views/SignIn.vue";
 import Dashboard from "../views/Dashboard.vue";
+import PreviousOrder from "../views/PreviousOrder.vue";
 import Profile from "../views/Profile.vue";
 import Meals from "../views/Meals.vue";
 import Meal from "../views/Meal.vue";
 import Payment from "../views/Payment.vue";
 import QR from "../views/QR.vue";
+import Notifications from "../views/Notifications.vue";
 import PaymentSuccessfull from "../views/PaymentSuccess.vue";
 
 Vue.use(VueRouter);
@@ -33,6 +35,11 @@ const routes = [
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
+  },
+  {
+    path: "/previousorder",
+    name: "Previous Order",
+    component: PreviousOrder,
   },
   {
     path: "/profile",
@@ -63,6 +70,11 @@ const routes = [
     path: "/qr",
     name: "QR",
     component: QR,
+  },
+  {
+    path: "/notifications",
+    name: "Notifications",
+    component: Notifications,
   },
 ];
 
