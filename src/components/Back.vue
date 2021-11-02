@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <div @click="goBack">
     <img src="../assets/icons/icon-back.svg" alt="" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
+};
 </script>
