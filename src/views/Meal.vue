@@ -8,6 +8,7 @@
       <div class="mt-8">
         <div class="flex justify-between items-center">
           <h1 class="font-bold text-2xl">{{ selectedMeal.name }}</h1>
+
           <div
             class="
               w-24
@@ -22,11 +23,25 @@
               items-center
             "
           >
-            <p class="pb-1">-</p>
+            <p class="">-</p>
             <h1 class="text-base">{{ count }}</h1>
             <p class="">+</p>
           </div>
         </div>
+        <p
+          class="
+            rounded-full
+            bg-yellow-200
+            text-bit
+            py-0.5
+            px-1.5
+            w-12
+            text-center
+            font-bold
+          "
+        >
+          Cafeteria
+        </p>
         <p class="text-primary-gray mt-5">
           {{ selectedMeal.description }}
         </p>
