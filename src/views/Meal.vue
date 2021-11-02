@@ -57,6 +57,7 @@
               bg-primary-green
               text-white
               font-bold
+              focus:outline-none
               rounded-full
             "
           >
@@ -71,6 +72,7 @@
               text-primary-black
               font-bold
               rounded-full
+              focus:outline-none
             "
           >
             Add to Cart
