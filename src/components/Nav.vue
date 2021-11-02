@@ -8,8 +8,13 @@
           data-width="38"
         ></span>
       </div>
-      <div class="h-9 w-9">
-        <img src="../assets/cart.png" alt="" />
+      <div class="flex items-center">
+        <div class="h-9 w-9">
+          <img src="../assets/cart.png" alt="" />
+        </div>
+        <div @click="showNotifications" class="ml-8">
+          <span class="iconify" data-icon="bx:bxs-bell" data-width="35"></span>
+        </div>
       </div>
     </nav>
     <div v-if="nav" class="fixed inset-0 p-8 bg-white z-30">
@@ -48,6 +53,9 @@ export default {
   methods: {
     toggleNav() {
       this.nav = !this.nav;
+    },
+    showNotifications() {
+      this.$router.push("/notifications");
     },
   },
 };
