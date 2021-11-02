@@ -9,7 +9,7 @@
       </p>
     </div>
 
-    <div class="w-full mt-20">
+    <div class="w-full mt-20 flex justify-center">
       <img src="../assets/qrCode.svg" alt="" />
     </div>
 
