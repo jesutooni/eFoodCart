@@ -8,6 +8,8 @@ module.exports = {
           green: "#2DCA73",
           gray: "#828E87",
           black: "#081E12",
+          paleGreen: "#ECFDF5",
+          lightpink: "#FEF2F2",
         },
         secondary: {
           lightWhite: "rgba(253, 254, 253, 0.8)",

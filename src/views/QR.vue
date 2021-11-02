@@ -9,7 +9,7 @@
       </p>
     </div>
 
-    <div class="w-full mt-20 flex justify-center">
+    <div class="w-full mt-16 flex justify-center">
       <img src="../assets/qrCode.svg" alt="" />
     </div>
 
@@ -22,10 +22,15 @@
         text-white
         rounded-full
         py-5
-        mt-36
+        mt-20
       "
     >
       Back Home
+    </button>
+    <button
+      class="border-2 border-black w-full font-bold rounded-full py-5 mt-7"
+    >
+      Use Digit Code
     </button>
   </div>
 </template>

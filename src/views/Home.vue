@@ -14,7 +14,6 @@
           font-bold
           bg-primary-green
           mt-6
-          mb-8
           rounded-full
           focus:outline-none
         "
