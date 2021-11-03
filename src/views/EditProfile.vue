@@ -25,6 +25,7 @@
           px-2
           py-0.5
           rounded-full
+          cursor-pointer
           border-2 border-primary-gray
           flex
           justify-center

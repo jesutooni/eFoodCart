@@ -20,12 +20,14 @@
     </div>
     <div class="flex items-center justify-center">
       <div
+        @click="editProfile"
         class="
           w-32
           h-9
           px-2
           py-0.5
           rounded-full
+          cursor-pointer
           border-2 border-primary-gray
           flex
           justify-center
@@ -65,7 +67,6 @@
         Gift a Friend
       </button>
       <div
-        @click="goToSettings"
         class="
           w-full
           flex
@@ -187,8 +188,8 @@ export default {
     toggleWithdrawal() {
       this.withdrawal = !this.withdrawal;
     },
-    goToSettings() {
-      this.$router.push("/settings");
+    editProfile() {
+      this.$router.push("/editprofile");
     },
   },
 };

@@ -6,7 +6,7 @@ import SignIn from "../views/SignIn.vue";
 import Dashboard from "../views/Dashboard.vue";
 import PreviousOrder from "../views/PreviousOrder.vue";
 import Profile from "../views/Profile.vue";
-import Settings from "../views/Settings.vue";
+import EditProfile from "../views/EditProfile.vue";
 import Meals from "../views/Meals.vue";
 import Meal from "../views/Meal.vue";
 import Checkout from "../views/Checkout.vue";
@@ -49,9 +49,9 @@ const routes = [
     component: Profile,
   },
   {
-    path: "/settings",
-    name: "Settings",
-    component: Settings,
+    path: "/editprofile",
+    name: "EditProfile",
+    component: EditProfile,
   },
   {
     path: "/meals",
