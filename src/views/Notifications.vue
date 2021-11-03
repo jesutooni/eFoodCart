@@ -129,7 +129,9 @@
             ></span>
           </div>
           <div class="w-3/4">
-            <h1 class="text-primary-gray">@cermuel gifted you a meal</h1>
+            <h1 class="text-primary-gray">
+              <span class="text-green-500">@cermuel</span> gifted you a meal
+            </h1>
             <p
               class="
                 rounded-full
