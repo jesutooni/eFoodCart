@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import SignUp from "../views/SignUp.vue";
 import SignIn from "../views/SignIn.vue";
+import Pin from "../views/Pin.vue";
 import Dashboard from "../views/Dashboard.vue";
 import PreviousOrder from "../views/PreviousOrder.vue";
 import Profile from "../views/Profile.vue";
@@ -32,6 +33,11 @@ const routes = [
     path: "/signin",
     name: "SignIn",
     component: SignIn,
+  },
+  {
+    path: "/pin",
+    name: "Pin",
+    component: Pin,
   },
   {
     path: "/dashboard",

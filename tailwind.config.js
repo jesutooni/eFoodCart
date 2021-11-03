@@ -17,6 +17,7 @@ module.exports = {
         secondary: {
           lightWhite: "rgba(253, 254, 253, 0.8)",
           white: "rgba(253, 254, 253, 1)",
+          gray: "#C4C4C4",
         },
         gradient: {
           1: "rgba(255, 71, 11, 1)",

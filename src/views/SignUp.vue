@@ -54,6 +54,7 @@
       </div>
       <button
         type="submit"
+        @click="goToPin"
         class="
           w-full
           h-16
@@ -65,7 +66,7 @@
           focus:outline-none
         "
       >
-        Sign Up
+        Continue
       </button>
     </form>
     <button
@@ -99,6 +100,11 @@ export default {
       email: "",
       password: "",
     };
+  },
+  methods: {
+    goToPin() {
+      this.$router.push("/pin");
+    },
   },
 };
 </script>
