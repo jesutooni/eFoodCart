@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary-green relative min-h-screen font-product-sans">
+  <div class="pb-6 bg-primary-green relative min-h-screen font-product-sans">
     <div class="p-8">
       <div
         class="
@@ -64,7 +64,7 @@
 export default {
   methods: {
     getStarted() {
-      this.$router.push("/signup");
+      this.$router.push("/signin");
     },
   },
 };
