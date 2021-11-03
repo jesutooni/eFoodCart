@@ -26,6 +26,17 @@
       />
       <img class="absolute top-80 left-16" src="../assets/bluebg.svg" alt="" />
       <img class="absolute top-48 right-10" src="../assets/bluebg.svg" alt="" />
+      <div
+        class="
+          absolute
+          bottom-0
+          left-0
+          w-44
+          h-44
+          bg-primary-yellow
+          rounded-tr-full
+        "
+      ></div>
 
       <div @click="toggleNav" class="w-8 ml-auto">
         <span class="iconify" data-icon="ci:close-big" data-width="32"></span>

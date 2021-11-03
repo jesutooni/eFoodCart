@@ -12,6 +12,7 @@ module.exports = {
           paleGreen: "#10B981",
           lightPink: "#FEF2F2",
           pink: "#EF4444",
+          yellow: "rgba(232, 227, 102, 1)",
         },
         secondary: {
           lightWhite: "rgba(253, 254, 253, 0.8)",
