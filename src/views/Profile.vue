@@ -2,8 +2,19 @@
   <div class="p-p8 font-product-sans">
     <top-nav />
     <div class="mt-8">
-      <div class="w-28 h-28 rounded-full bg-primary-green mx-auto">
-        <img src="" alt="" />
+      <div
+        class="
+          w-28
+          h-28
+          rounded-full
+          bg-primary-green
+          mx-auto
+          flex
+          items-center
+          justify-center
+        "
+      >
+        <img src="../assets/avatar.png" alt="" />
       </div>
       <h1 class="font-bold text-center mt-6 text-2xl mb-7">David Adebayo</h1>
     </div>
@@ -50,7 +61,11 @@
       </div>
     </div>
     <div class="mt-16">
+      <button class="bg-primary-green w-full text-white rounded-full py-5 mb-8">
+        Gift a Friend
+      </button>
       <div
+        @click="goToSettings"
         class="
           w-full
           flex
@@ -171,6 +186,9 @@ export default {
   methods: {
     toggleWithdrawal() {
       this.withdrawal = !this.withdrawal;
+    },
+    goToSettings() {
+      this.$router.push("/settings");
     },
   },
 };

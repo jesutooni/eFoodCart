@@ -6,9 +6,11 @@ import SignIn from "../views/SignIn.vue";
 import Dashboard from "../views/Dashboard.vue";
 import PreviousOrder from "../views/PreviousOrder.vue";
 import Profile from "../views/Profile.vue";
+import Settings from "../views/Settings.vue";
 import Meals from "../views/Meals.vue";
 import Meal from "../views/Meal.vue";
-import Payment from "../views/Payment.vue";
+import Checkout from "../views/Checkout.vue";
+import Cart from "../views/Cart.vue";
 import QR from "../views/QR.vue";
 import Notifications from "../views/Notifications.vue";
 import PaymentSuccessfull from "../views/PaymentSuccess.vue";
@@ -47,6 +49,11 @@ const routes = [
     component: Profile,
   },
   {
+    path: "/settings",
+    name: "Settings",
+    component: Settings,
+  },
+  {
     path: "/meals",
     name: "Meals",
     component: Meals,
@@ -57,9 +64,14 @@ const routes = [
     component: Meal,
   },
   {
-    path: "/meals/:id/payment",
-    name: "Payment",
-    component: Payment,
+    path: "/checkout",
+    name: "Checkout",
+    component: Checkout,
+  },
+  {
+    path: "/cart",
+    name: "Cart",
+    component: Cart,
   },
   {
     path: "/success",

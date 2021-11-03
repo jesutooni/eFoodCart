@@ -33,7 +33,7 @@
             <router-link to="/profile"
               ><li class="mb-4 py-4">Profile</li></router-link
             >
-            <router-link to="/"
+            <router-link to="/settings"
               ><li class="mb-4 py-4">Settings</li></router-link
             >
           </ul>

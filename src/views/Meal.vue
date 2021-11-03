@@ -101,7 +101,7 @@ export default {
   },
   methods: {
     payMeal() {
-      this.$router.push("/meals/" + this.selectedMeal.id + "/payment");
+      this.$router.push("/checkout");
     },
   },
 };
