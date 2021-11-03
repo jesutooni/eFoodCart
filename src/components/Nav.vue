@@ -9,7 +9,7 @@
         ></span>
       </div>
       <div class="flex items-center">
-        <div class="h-9 w-9">
+        <div @click="showCart" class="h-9 w-9">
           <img src="../assets/cart.png" alt="" />
         </div>
         <div @click="showNotifications" class="ml-8">
@@ -18,6 +18,15 @@
       </div>
     </nav>
     <div v-if="nav" class="fixed inset-0 p-8 bg-white z-30">
+      <img class="absolute top-0 left-0" src="../assets/greenbg.svg" alt="" />
+      <img
+        class="absolute bottom-20 right-20"
+        src="../assets/bluebgr.svg"
+        alt=""
+      />
+      <img class="absolute top-80 left-16" src="../assets/bluebg.svg" alt="" />
+      <img class="absolute top-48 right-10" src="../assets/bluebg.svg" alt="" />
+
       <div @click="toggleNav" class="w-8 ml-auto">
         <span class="iconify" data-icon="ci:close-big" data-width="32"></span>
       </div>
@@ -56,6 +65,9 @@ export default {
     },
     showNotifications() {
       this.$router.push("/notifications");
+    },
+    showCart() {
+      this.$router.push("/cart");
     },
   },
 };
