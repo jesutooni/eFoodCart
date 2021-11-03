@@ -27,6 +27,9 @@ module.exports = {
       fontSize: {
         bit: ".5rem",
       },
+      height: {
+        110: "27.5rem",
+      },
     },
   },
   variants: {
