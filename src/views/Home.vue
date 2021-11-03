@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary-green min-h-screen font-product-sans">
+  <div class="bg-primary-green relative min-h-screen font-product-sans">
     <div class="p-8">
       <div
         class="
@@ -28,7 +28,7 @@
         src="../assets/toyboy.png"
         alt=""
       />
-      <div class="absolute bottom-0 px-8 z-30 w-full">
+      <div class="absolute bottom-0 px-8 z-50 w-full">
         <button
           @click="getStarted"
           class="
@@ -45,6 +45,18 @@
         </button>
       </div>
     </div>
+    <div
+      class="
+        absolute
+        bottom-0
+        h-72
+        w-full
+        z-40
+        bg-gradient-to-t
+        from-gradient-1
+        to-gradient-2
+      "
+    ></div>
   </div>
 </template>
 

@@ -17,6 +17,10 @@ module.exports = {
           lightWhite: "rgba(253, 254, 253, 0.8)",
           white: "rgba(253, 254, 253, 1)",
         },
+        gradient: {
+          1: "rgba(255, 71, 11, 1)",
+          2: "rgba(255, 216, 11, 0)",
+        },
       },
       fontFamily: {
         "product-sans": ["'product sans'"],
