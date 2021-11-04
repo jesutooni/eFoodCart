@@ -11,8 +11,9 @@
 
       <div class="flex justify-between py-12 my-12">
         <input
-          type="number"
+          type="text"
           v-model="pin1"
+          maxlength="1"
           class="
             w-16
             h-14
@@ -25,8 +26,9 @@
           "
         />
         <input
-          type="number"
+          type="text"
           v-model="pin2"
+          maxlength="1"
           class="
             w-16
             h-14
@@ -39,8 +41,9 @@
           "
         />
         <input
-          type="number"
+          type="text"
           v-model="pin3"
+          maxlength="1"
           class="
             w-16
             h-14
@@ -53,8 +56,9 @@
           "
         />
         <input
-          type="number"
+          type="text"
           v-model="pin4"
+          maxlength="1"
           class="
             w-16
             h-14
