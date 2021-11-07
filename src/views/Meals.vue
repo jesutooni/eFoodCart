@@ -28,29 +28,61 @@
         />
       </div>
 
-      <div
-        class="
-          bg-primary-green
-          text-white
-          rounded-full
-          flex
-          items-center
-          justify-center
-          px-4
-          py-2
-          w-20
-        "
-      >
-        <p class="mr-1.5">All</p>
-        <span
-          class="iconify"
-          data-icon="clarity:caret-line"
-          style="color: white"
-          data-width="23"
-          data-rotate="180deg"
-        ></span>
+      <div class="relative">
+        <div
+          @click="toggleCategory"
+          class="
+            bg-primary-green
+            text-white
+            rounded-full
+            flex
+            items-center
+            justify-center
+            px-4
+            py-2
+            w-28
+            cursor-pointer
+          "
+        >
+          <p class="mr-1.5">{{ selectedCategory }}</p>
+          <span
+            class="iconify"
+            data-icon="clarity:caret-line"
+            style="color: white"
+            data-width="23"
+            data-rotate="180deg"
+          ></span>
+        </div>
+        <div
+          v-if="category"
+          :class="`
+            absolute
+            top-12
+            z-10
+            bg-white
+            w-2/3
+            sm:w-1/2
+            text-center
+            rounded-lg
+            overflow-hidden
+            shadow-xl
+            cursor-pointer
+            duration-700 ${category ? 'opacity-100' : 'opacity-0'}
+          `"
+        >
+          <div
+            @mouseover="hoverCategory(index)"
+            @click="selectCategory(index)"
+            v-for="(category, index) in categories"
+            :key="index"
+            :class="`border-b p-2 ${
+              index === hoverIndex ? 'text-white bg-primary-green' : ''
+            }`"
+          >
+            {{ category }}
+          </div>
+        </div>
       </div>
-
       <div class="mt-8 flex flex-wrap gap-6 sm:gap-9">
         <div
           @click="selectMeal(index)"
@@ -80,7 +112,10 @@ export default {
   data() {
     return {
       search: "",
-      categories: ["All"],
+      category: false,
+      categories: ["ALL", "RICE", "DRINKS", "SNACKS", "EXTRAS"],
+      selectedCategory: "ALL",
+      hoverIndex: 0,
     };
   },
   computed: {
@@ -91,6 +126,16 @@ export default {
   methods: {
     selectMeal(index) {
       this.$store.commit("selectMeal", index);
+    },
+    hoverCategory(index) {
+      this.hoverIndex = index;
+    },
+    selectCategory(index) {
+      this.selectedCategory = this.categories[index];
+      this.category = false;
+    },
+    toggleCategory() {
+      this.category = !this.category;
     },
   },
 };
