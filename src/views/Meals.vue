@@ -55,7 +55,7 @@
         </div>
         <div
           v-if="category"
-          :class="`
+          class="
             absolute
             top-12
             z-10
@@ -67,8 +67,7 @@
             overflow-hidden
             shadow-xl
             cursor-pointer
-            duration-700 ${category ? 'opacity-100' : 'opacity-0'}
-          `"
+          "
         >
           <div
             @mouseover="hoverCategory(index)"

@@ -103,6 +103,7 @@
         <h1 class="ml-4">Help</h1>
       </div>
       <div
+        @click="signOut"
         class="
           w-full
           flex
@@ -190,6 +191,9 @@ export default {
     },
     editProfile() {
       this.$router.push("/editprofile");
+    },
+    signOut() {
+      this.$router.push("/signin");
     },
   },
 };
