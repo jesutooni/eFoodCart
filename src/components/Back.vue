@@ -1,5 +1,5 @@
 <template>
-  <div @click="goBack" class="cursor-pointer">
+  <div @click="goBack" class="cursor-pointer w-10">
     <img src="../assets/icons/icon-back.svg" alt="" />
   </div>
 </template>
