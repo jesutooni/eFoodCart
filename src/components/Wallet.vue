@@ -11,7 +11,10 @@
         "
       >
         <h1>Balance</h1>
-        <div @click="toggleWalletModal" class="flex items-center">
+        <div
+          @click="toggleWalletModal"
+          class="flex items-center cursor-pointer"
+        >
           <h1>Fund Wallet</h1>
           <span
             class="iconify ml-1.5"
