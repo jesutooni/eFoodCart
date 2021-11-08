@@ -37,14 +37,14 @@
             rounded-full
             flex
             items-center
-            justify-center
+            justify-between
             px-4
             py-2
             w-28
             cursor-pointer
           "
         >
-          <p class="mr-1.5">{{ selectedCategory }}</p>
+          <p>{{ selectedCategory }}</p>
           <span
             class="iconify"
             data-icon="clarity:caret-line"
