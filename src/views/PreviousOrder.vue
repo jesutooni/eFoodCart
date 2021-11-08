@@ -1,5 +1,5 @@
 <template>
-  <div class="p-p8">
+  <div class="p-p8 sm:p-8">
     <back />
     <div class="mt-8 font-product-sans">
       <div>

@@ -1,6 +1,13 @@
 <template>
   <div
-    class="p-p8 min-h-screen font-product-sans flex flex-col justify-between"
+    class="
+      p-p8
+      sm:p-8
+      min-h-screen
+      font-product-sans
+      flex flex-col
+      justify-between
+    "
   >
     <div>
       <back />

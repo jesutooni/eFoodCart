@@ -1,5 +1,7 @@
 <template>
-  <div class="p-p8 h-screen font-product-sans flex flex-col justify-between">
+  <div
+    class="p-p8 sm:p-8 h-screen font-product-sans flex flex-col justify-between"
+  >
     <top-nav />
     <div class="w-auto mx-auto">
       <div class="w-28 h-28 mx-auto flex justify-center">
