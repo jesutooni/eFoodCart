@@ -27,13 +27,22 @@
     <div
       @click="toggleWalletModal"
       v-if="walletModal"
-      class="fixed inset-0 bg-black bg-opacity-70 flex items-center z-30"
+      class="
+        fixed
+        inset-0
+        bg-black bg-opacity-70
+        flex
+        justify-center
+        items-center
+        z-30
+      "
     >
-      <div @click.stop="" class="bg-white mx-8 p-p8 rounded-xl">
+      <div @click.stop="" class="bg-white mx-8 p-p8 sm:p-8 rounded-xl">
         <div class="flex justify-between items-center">
           <h1 class="font-bold text-xl">Fund Wallet</h1>
           <img
             @click="toggleWalletModal"
+            class="cursor-pointer"
             src="../assets/icons/close.svg"
             alt=""
           />

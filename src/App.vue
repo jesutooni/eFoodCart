@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="max-w-3xl mx-auto md:border-2">
+  <div id="app" class="max-w-3xl mx-auto">
     <router-view />
   </div>
 </template>

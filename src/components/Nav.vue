@@ -1,7 +1,7 @@
 <template>
   <div class="font-product-sans">
     <nav class="flex justify-between">
-      <div @click="toggleNav">
+      <div @click="toggleNav" class="cursor-pointer">
         <span
           class="iconify"
           data-icon="heroicons-outline:menu-alt-2"
@@ -38,7 +38,7 @@
         "
       ></div>
 
-      <div @click="toggleNav" class="w-8 ml-auto">
+      <div @click="toggleNav" class="w-8 ml-auto cursor-pointer">
         <span class="iconify" data-icon="ci:close-big" data-width="32"></span>
       </div>
       <div class="h-4/5 flex items-center">
